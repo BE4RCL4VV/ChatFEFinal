@@ -1,0 +1,8 @@
+<div class="chat-message">
+  <!-- <div class="channel">#{{ message.channel | titlecase }}</div> -->
+  <div class="name">{{ message.name | titlecase }}</div>
+  <div class="body">{{ message.body }}</div>
+  <div class="id">{{ message.id }}</div>
+  <div class="created-date">{{ message.created_on | date:'short' }}</div>
+  <div class="updated-date">{{ message.updated_on | date:'short' }}</div>
+</div>

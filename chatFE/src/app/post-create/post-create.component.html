@@ -1,0 +1,18 @@
+<form [formGroup]="postForm" (submit)="onSubmit()">
+    <label>Name</label><br>
+    <input type="text" id="name" formControlName="name"><br>
+    <label>Body</label><br>
+    <input type="text" id="body" formControlName="body"><br>
+    <input type="submit" [disabled]="!postForm.valid">
+    <p>Chat Message Form Status: {{ postForm.status }}</p>
+    
+</form>
+<!-- <div class="post">
+    <div *ngFor="let item of list" class="post">
+        <h3>{{ item.name }}</h3>
+        <h5>Created on: {{ item.created_on | date:'short' }}</h5>
+        <p>{{ item.body }}</p>
+        <a [routerLink]="['/post', item.id]">Read More</a><br>
+        
+    </div>
+</div> -->
